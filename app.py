@@ -25,22 +25,20 @@ app.secret_key = "mysecretkey"
 s = pd.Series([1, 2, 3, 4, 5, 6])
 t = pd.Series([2, 4, 6, 8, 10, 12])
 df = pd.DataFrame({'col1': s, 'col2': t})
-
+print(df)
 
 # routes
 
 
-@app.route('/')
-def Index():
-    cur = mysql.connection.cursor()
-    cur.execute('select * from tb_imagen')
-    data = cur.fetchall()
+# @app.route('/')
+# def Index():
+#   cur = mysql.connection.cursor()
+#   cur.execute('select * from tb_imagen')
+#   data = cur.fetchall()
 
-    cur.close()
-    return render_template('index.html', contacts=df)
+#  cur.close()
+#   return render_template('index.html', contacts=df)
 
-
-print(df)
 
 # starting the app
 if __name__ == "__main__":
