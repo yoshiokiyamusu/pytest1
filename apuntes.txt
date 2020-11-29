@@ -7,7 +7,7 @@ py -m pip install flask_mysqldb
 py -m pip install mysqlclient-1.4.1-cp37-cp37m-win32.whl
 
 https://github.com/FaztWeb/flask-crud-contacts-app/blob/master/App.py
-
+https://www.youtube.com/watch?v=23sp3cj5Pnc (deploy flask in heroku)
 
 CREATE TABLE tb_contact(
 contact_id int(11) NOT NULL AUTO_INCREMENT,
