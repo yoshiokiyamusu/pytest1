@@ -1,0 +1,19 @@
+# para ejecutar en client side
+py app.py
+
+py -m pip install flask flask_mysqldb
+py -m pip install flask_mysqldb
+
+py -m pip install mysqlclient-1.4.1-cp37-cp37m-win32.whl
+
+https://github.com/FaztWeb/flask-crud-contacts-app/blob/master/App.py
+
+
+CREATE TABLE tb_contact(
+contact_id int(11) NOT NULL AUTO_INCREMENT,
+fullname varchar(255) NOT NULL,
+phone varchar(50) NOT NULL,
+email varchar(255) NOT NULL,
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+PRIMARY KEY (contact_id)
+);
