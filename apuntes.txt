@@ -18,7 +18,6 @@ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 PRIMARY KEY (contact_id)
 );
 
-
 :::::::::::::
 github repo
 pytest1
