@@ -30,14 +30,14 @@ print(df)
 # routes
 
 
-# @app.route('/')
-# def Index():
-#   cur = mysql.connection.cursor()
-#   cur.execute('select * from tb_imagen')
-#   data = cur.fetchall()
-
-#  cur.close()
-#   return render_template('index.html', contacts=df)
+@app.route('/')
+def Index():
+    cur = mysql.connection.cursor()
+    cur.execute('SELECT * FROM enviados_a_servicio')
+    data = cur.fetchall()
+    print(data)
+    cur.close()
+    return render_template('index.html', contacts=df)
 
 
 # starting the app
