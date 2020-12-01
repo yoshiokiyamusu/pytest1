@@ -37,7 +37,7 @@ def Index():
     data = cur.fetchall()
     print(data)
     cur.close()
-    return render_template('index.html', contacts=df)
+    return render_template('index.html', contacts=data)
 
 
 # starting the app
